@@ -1,0 +1,23 @@
+
+<ion-content class="login" *ngIf="!authService.authenticated()">
+  <form [formGroup]="loginForm">
+
+    <ion-list inset>
+
+      <ion-item >
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" formControlName="userName"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <div padding align="right">
+    <button ion-button type="submit" [disabled]="!loginForm.valid">login</button>
+    </div>
+  </form>
+
+</ion-content>
