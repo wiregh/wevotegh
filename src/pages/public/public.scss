@@ -1,3 +1,35 @@
 page-public {
+    section{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        background-color: map-get($colors,primary);
+        color: #fff;
+        height: 1000px;
 
+        p{
+            margin: 0 auto;
+
+        }
+
+        img{
+            
+        }
+        .left{
+            width: 40%;
+            float: left;
+        }
+
+        .right{
+            width:50%;
+            float: right;
+            p{
+                margin: 15px;
+                line-height: 2em;
+            }
+            button{
+                margin-top:20px;
+            }
+        }
+    }
 }

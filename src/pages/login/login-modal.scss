@@ -1,3 +1,22 @@
+.ios, .md, .wd{
 login-modal {
-
+    #ion-content{
+        background-color:map-get($colors ,primary );
+        border-radius:10px;
+        overflow-y: hidden;
+        
+    }
+    .inputs{
+        background-color:map-get($colors ,primary );
+        color: #fff;
+    }
+    .labels{
+        background-color:map-get($colors ,primary );
+        color: #fff;
+    }
+    .items{
+       background-color:map-get($colors ,primary );
+        color: #fff;
+    }
+}
 }

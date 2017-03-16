@@ -3,13 +3,14 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import {PublicPage} from "../pages/public/public";
+import {MobileLoginPage} from "../pages/mobile-login/mobile-login";
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = PublicPage;
+  rootPage = MobileLoginPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

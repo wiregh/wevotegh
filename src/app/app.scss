@@ -14,3 +14,26 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.big-title{
+    font-size: 50px;
+    text-align: center;
+}
+.welcome{
+    font-size: 25px;
+    color: #fff;
+}
+.welcome-text{
+    font-size: 50px;
+}
+
+#ion-content{
+   max-width: 60%;
+   overflow: hidden;
+}
+.ion-modal-view{
+    width: 60px;
+}
+.scroll-content{
+    overflow-y: hidden;
+    
+}
