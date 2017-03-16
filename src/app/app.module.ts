@@ -13,6 +13,7 @@ import {PublicheaderComponent} from "../components/publicheader/publicheader";
 import {LoginModalComponent} from "../pages/login/login-modal";
 import {AuthService} from "../providers/authservice";
 import {FormBuilder} from "@angular/forms";
+import {MobileLoginPage} from "../pages/mobile-login/mobile-login"
 
 export function authHttpServiceFactory(http: Http, options: RequestOptions) {
   return new AuthHttp(new AuthConfig(), http, options);
@@ -22,6 +23,7 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     MyApp,
     PublicPage,
     HomePage,
+    MobileLoginPage,
     PublicheaderComponent,
     LoginModalComponent
 
@@ -35,7 +37,8 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     PublicPage,
     HomePage,
      PublicheaderComponent,
-    LoginModalComponent
+    LoginModalComponent,
+    MobileLoginPage
   //
   ],
   providers: [Storage,{provide: ErrorHandler, useClass: IonicErrorHandler},

@@ -1,22 +1,32 @@
 
-<ion-content class="login" *ngIf="!authService.authenticated()">
+
+<ion-content id="ion-content" class="login" *ngIf="!authService.authenticated()">
+  
   <form [formGroup]="loginForm">
+    <h1 align="center" style="color: #fff;margin-top: 40px;">Login</h1>
+    
+    <ion-list inset >
 
-    <ion-list inset>
-
-      <ion-item >
-        <ion-label floating>Username</ion-label>
-        <ion-input type="text" formControlName="userName"></ion-input>
+      <ion-item class="items">
+        <ion-label class="labels" floating>Username</ion-label>
+        <ion-input class="inputs" type="text" formControlName="userName"></ion-input>
       </ion-item>
 
-      <ion-item>
-        <ion-label floating>Password</ion-label>
-        <ion-input type="password" formControlName="password"></ion-input>
+      <ion-item class="items">
+        <ion-label class="labels" floating>Password</ion-label>
+        <ion-input type="password" formControlName="password" ></ion-input>
       </ion-item>
 
+      <ion-item class="items" item-center>
+        <ion-label>Remember Me</ion-label>
+        <ion-checkbox color="primary" checked="true"></ion-checkbox>
+      </ion-item>
     </ion-list>
-    <div padding align="right">
-    <button ion-button type="submit" [disabled]="!loginForm.valid">login</button>
+    <div padding align="center">
+      
+    <button color="light" round block ion-button type="submit" [disabled]="!loginForm.valid">login</button>
+     <button round ion-button color="secondary">Sign up</button>
+     <button round ion-button color="secondary">Forgot Password</button>
     </div>
   </form>
 
