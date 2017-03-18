@@ -1,6 +1,7 @@
   import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms'
   import {AuthService} from "../../providers/authservice";
+  import {ViewMode} from "../../providers/view-mode";
 
 /*
   Generated class for the LoginModal component.
@@ -9,22 +10,27 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms'
   for more info on Angular 2 Components.
 */
 @Component({
-  selector: 'login-modal',
-  templateUrl: 'login-modal.html'
+  selector: 'page-login',
+  templateUrl: 'login.html'
 })
-export class LoginModalComponent {
+export class LoginPage{
 auth: AuthService;
   // When the page loads, we want the Login segment to be selected
   authType: string = "login";
   text: string;
 loginForm: FormGroup;
+
 signupForm: FormGroup;
-  constructor(private authService: AuthService, private formBuilder: FormBuilder) {
+  constructor(private authService: AuthService, private formBuilder: FormBuilder, public viewMode: ViewMode) {
+
 //loginForm fields
     this.loginForm = formBuilder.group({
       userName: ["", [Validators.required]],
-      password: ["", [Validators.required]]
+      password: ["", [Validators.required]],
+      rememberMe: [false]
     });
+
+
 
 
     // //signupForm fields
