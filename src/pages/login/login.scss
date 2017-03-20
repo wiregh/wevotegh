@@ -2,13 +2,23 @@
   page-login {
 
     .app {
-      background-color: map-get($colors, primary);
-      .para {
+      background-color: map-get($colors, dark);
+  
+    }
+     .logo {
+        text-align: center;
         margin-top: 50px;
       }
-    }
+    .login-text{
+        text-align: center;
+        color:#fff;
+      }
+      .welcome{
+        text-align:center;
+        color: #fff;
+      }
       .browser {
-        background-color: map-get($colors, secondary);
+        background-color: map-get($colors, primary);
         border-radius: 10px;
         overflow-y: hidden;
       }

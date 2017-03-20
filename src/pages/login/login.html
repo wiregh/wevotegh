@@ -1,12 +1,11 @@
 
 
 <ion-content [ngClass]="(viewMode.isBrowser) ? 'browser' : 'app'" *ngIf="!authService.authenticated()">
-  <p align="center" class="para"><img src="../assets/images/vote.png" width="120" height="120"></p>
-  <h1 align="center" class="welcome">WELCOME TO WEVOTEGH</h1>
-  <p style="color: #fff;text-align: center;">Please login into your Account</p>
+  <p class="logo"><img src="../assets/images/vote.png" width="120" height="120"></p>
+  <h1 class="welcome">WELCOME TO WEVOTEGH</h1>
+  <p class="login-text">Please login into your Account</p>
   <form [formGroup]="loginForm">
-    <h1 align="center" style="color: #fff;margin-top: 40px;">Login</h1>
-
+   
     <ion-list inset >
 
       <ion-item class="items">
