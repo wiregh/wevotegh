@@ -2,12 +2,10 @@
   page-login {
 
     .app {
-      background-color: map-get($colors, dark);
-  
-    }
-     .logo {
+      background-color: map-get($colors, primary);
+      
+      .logo {
         text-align: center;
-        margin-top: 50px;
       }
     .login-text{
         text-align: center;
@@ -17,17 +15,61 @@
         text-align:center;
         color: #fff;
       }
+      
+      img{
+        margin-top: 20px;
+      }
+      .inputs{
+        background-color: map-get($colors, primary);
+        color: #fff;
+      
+      }
+      .float-labels {
+        background-color: map-get($colors, primary);
+       color: #fff;
+      }
+      .items {
+        background-color: map-get($colors, primary);
+        color: #fff;
+      }
+    .btn{
+      color: map-get($colors , primary );
+
+    }
+    }
       .browser {
         background-color: map-get($colors, primary);
         border-radius: 10px;
         overflow-y: hidden;
-      }
 
-      .inputs {
-        background-color: map-get($colors, primary);
+        .input-has-focus .label-md[floating] {
         color: #fff;
       }
-      .labels {
+        .logo {
+        text-align: center;
+      }
+    .login-text{
+        text-align: center;
+        color:#fff;
+      }
+      .welcome{
+        text-align:center;
+        color: #fff;
+      }
+        
+        img{
+          display: none;
+        }
+
+        .inputs {
+        background-color: map-get($colors, primary);
+        color: #fff;
+      
+      }
+      ion-label{
+        color: #fff;
+      }
+      .float-labels {
         background-color: map-get($colors, primary);
         color: #fff;
       }
@@ -39,6 +81,11 @@
       color: map-get($colors , primary );
 
     }
+        
+      }
+
+      
+
     }
 
 

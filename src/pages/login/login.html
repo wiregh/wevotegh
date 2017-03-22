@@ -1,20 +1,19 @@
 
 
-<ion-content [ngClass]="(viewMode.isBrowser) ? 'browser' : 'app'" *ngIf="!authService.authenticated()">
+<ion-content padding scroll="false" [ngClass]="(viewMode.isBrowser) ? 'browser' : 'app'" *ngIf="!authService.authenticated()">
   <p class="logo"><img src="../assets/images/vote.png" width="120" height="120"></p>
   <h1 class="welcome">WELCOME TO WEVOTEGH</h1>
   <p class="login-text">Please login into your Account</p>
   <form [formGroup]="loginForm">
    
     <ion-list inset >
-
       <ion-item class="items">
-        <ion-label class="labels" floating>Username</ion-label>
+        <ion-label class="float-labels"  floating>Username</ion-label>
         <ion-input class="inputs" type="text" formControlName="userName"></ion-input>
       </ion-item>
 
       <ion-item class="items">
-        <ion-label class="labels" floating>Password</ion-label>
+        <ion-label class="float-labels" floating>Password</ion-label>
         <ion-input type="password" formControlName="password" ></ion-input>
       </ion-item>
 
