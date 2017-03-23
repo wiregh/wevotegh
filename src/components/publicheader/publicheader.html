@@ -7,17 +7,17 @@
   this is a "header" at the top of the public page. may show a logo quick links to sign in , signup etcon the far right
   Idealy the logo should sho
 -->
-<header>
-  <div align="left" class="logo">
-    <h1 style="color: #fff;">WEVOTE</h1>
+<ion-grid class="header">
+  <ion-row>
+    <ion-col col-10 col-sm>
+      <h1 class="logo">WEVOTE</h1>
+    </ion-col>
+    <ion-col col-2 col-sm>
+      <h1 class="btn-login" (click)="presentLoginModal()">Login</h1>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 
-  </div>
-
-   <div align="right" class="btn-container">
-   <h3 class="btn-login" (click)="presentLoginModal()">Login</h3>
-  </div>
-
-</header>
 
 
 
