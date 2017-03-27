@@ -1,8 +1,9 @@
   import { Component } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms'
+  import {FormBuilder, FormGroup, Validators} from '@angular/forms'
   import {AuthService} from "../../providers/authservice";
   import {ViewMode} from "../../providers/view-mode";
-
+  import {SignupPage} from "../signup/signup";
+  import { NavController, NavParams } from 'ionic-angular';
 /*
   Generated class for the LoginModal component.
 
@@ -21,8 +22,8 @@ auth: AuthService;
 loginForm: FormGroup;
 
 signupForm: FormGroup;
-  constructor(private authService: AuthService, private formBuilder: FormBuilder, public viewMode: ViewMode) {
-
+  constructor(public navCtrl: NavController, public navParams: NavParams, private authService: AuthService, private formBuilder: FormBuilder, public viewMode: ViewMode) {
+    
 //loginForm fields
     this.loginForm = formBuilder.group({
       userName: ["", [Validators.required]],
@@ -47,5 +48,9 @@ signupForm: FormGroup;
     // })
 
   }
+
+  signup(){
+      this.navCtrl.push(SignupPage);
+    }
 
 }
