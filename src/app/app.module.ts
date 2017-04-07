@@ -11,6 +11,7 @@ import {HomePage} from "../pages/home/home";
 import {PublicPage} from "../pages/public/public";
 import {PublicheaderComponent} from "../components/publicheader/publicheader";
 import {LoginPage} from "../pages/login/login";
+import {SignupPage} from "../pages/signup/signup";
 import {AuthService} from "../providers/authservice";
 import {FormBuilder} from "@angular/forms";
 import {MobileLoginPage} from "../pages/mobile-login/mobile-login"
@@ -25,10 +26,9 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     MyApp,
     PublicPage,
     HomePage,
-
     PublicheaderComponent,
     LoginPage,
-
+    SignupPage
 
 
   ],
@@ -39,8 +39,9 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     MyApp,
     PublicPage,
     HomePage,
-     PublicheaderComponent,
-    LoginPage
+    PublicheaderComponent,
+    LoginPage,
+    SignupPage
 
 
   //

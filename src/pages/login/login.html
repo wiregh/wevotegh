@@ -1,6 +1,6 @@
 
 
-<ion-content padding scroll="false" [ngClass]="(viewMode.isBrowser) ? 'browser' : 'app'" *ngIf="!authService.authenticated()">
+<ion-content  scroll="false" [ngClass]="(viewMode.isBrowser) ? 'browser' : 'app'" *ngIf="!authService.authenticated()">
   <p class="logo"><img src="../assets/images/vote.png" width="120" height="120"></p>
   <h1 class="welcome">WELCOME TO WEVOTEGH</h1>
   <p class="login-text">Please login into your Account</p>
@@ -25,7 +25,7 @@
     <div padding align="center">
 
     <button color="light" round block ion-button type="submit" [disabled]="!loginForm.valid">login</button>
-     <button round ion-button color="secondary">Sign up</button>
+     <button round ion-button color="secondary" (click)="signup()">Sign up</button>
      <button round ion-button color="secondary">Forgot Password</button>
     </div>
   </form>

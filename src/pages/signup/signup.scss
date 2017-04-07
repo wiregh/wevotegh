@@ -1,9 +1,11 @@
-
-  page-login {
-
-    .app {
+page-signup {
+     .app {
       background-color: map-get($colors, primary);
       
+      #reg-top{
+          margin-top: 60px;
+      }
+
       .logo {
         text-align: center;
       }
@@ -14,6 +16,7 @@
       .welcome{
         text-align:center;
         color: #fff;
+        font-size: 50px;
       }
       
       img{
@@ -22,7 +25,7 @@
       .inputs{
         background-color: map-get($colors, primary);
         color: #fff;
-      
+        border-radius: 10px;
       }
       .float-labels {
         background-color: map-get($colors, primary);
@@ -41,13 +44,13 @@
       color: map-get($colors , primary );
 
     }
-    .btns{float: left;}
     }
       .browser {
         background-color: map-get($colors, primary);
         border-radius: 10px;
         overflow-y: hidden;
-
+       
+       
         .input-has-focus .label-md[floating] {
         color: #fff;
       }
@@ -89,9 +92,4 @@
     }
         
       }
-
-      
-
-    }
-
-
+}

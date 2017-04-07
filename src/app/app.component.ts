@@ -6,6 +6,7 @@ import {PublicPage} from "../pages/public/public";
 import {MobileLoginPage} from "../pages/mobile-login/mobile-login";
 import {ViewMode} from "../providers/view-mode";
 import {LoginPage} from "../pages/login/login";
+import {SignupPage} from "../pages/signup/signup";
 
 
 @Component({
