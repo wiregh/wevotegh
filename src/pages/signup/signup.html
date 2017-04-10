@@ -1,10 +1,8 @@
 
 
 <ion-content padding scroll="false" [ngClass]="(viewMode.isBrowser) ? 'browser' : 'app'" *ngIf="!authService.authenticated()">
-  <div id="reg-top">
   <h1 class="welcome">Sign Up</h1>
   <p class="login-text">Please Create your Account Below</p>
-  </div>
   <form [formGroup]="signupForm">
     <ion-list inset >
       <ion-item class="items">
@@ -26,15 +24,17 @@
         <ion-label class="float-labels"  floating>Email</ion-label>
         <ion-input class="inputs" type="email" formControlName="email"></ion-input>
       </ion-item>
-      <ion-item class="items">
-        
-      </ion-item>
-    </ion-list>
-    <div padding align="center">
 
-    <button color="light" round block ion-button type="submit" [disabled]="!signupForm.valid">Create Account</button>
-  
+      <div padding align="center">
+        <button color="light" round block ion-button type="submit" [disabled]="!signupForm.valid">
+         Create Account
+    </button>
     </div>
+    </ion-list>
+   
+    
+      
+    
   </form>
 
 </ion-content>

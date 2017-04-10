@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {NavController, NavParams, ModalController} from 'ionic-angular';
-
+import {SignupPage} from "../signup/signup";
 /*
   Generated class for the Public page.
 
@@ -13,7 +13,15 @@ import {NavController, NavParams, ModalController} from 'ionic-angular';
 })
 export class PublicPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public modalCtrl: ModalController,public navCtrl: NavController, public navParams: NavParams) {
+  }
+  presentsignupModal() {
+    // let mo: ModalOptions;
+    // mo.showBackdrop=false;
+    // mo.enableBackdropDismiss= true;
+    let profileModal = this.modalCtrl.create(SignupPage);
+
+    profileModal.present();
   }
 
   ionViewDidLoad() {

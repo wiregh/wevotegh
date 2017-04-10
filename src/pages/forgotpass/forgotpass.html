@@ -1,0 +1,28 @@
+<!--
+  Generated template for the Forgotpass page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content  scroll="false" [ngClass]="(viewMode.isBrowser) ? 'browser' : 'app'" *ngIf="!authService.authenticated()">
+  <p class="logo"><img src="../assets/images/vote.png" width="120" height="120"></p>
+  <div id="header">
+  <h1 class="welcome">Forgot Your Password?</h1>
+  <p class="login-text">Enter Your Email</p>
+  </div>
+  <form [formGroup]="forgotpassForm">
+   
+    <ion-list inset >
+      <ion-item class="items">
+        <ion-label class="float-labels"  inline>Email</ion-label>
+        <ion-input class="inputs" round type="email" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item class="items"></ion-item>
+    </ion-list>
+    <div padding align="center">
+    <button color="light" round block ion-button type="submit" [disabled]="!forgotpassForm.valid">Reset</button>
+    </div>
+  </form>
+
+</ion-content>

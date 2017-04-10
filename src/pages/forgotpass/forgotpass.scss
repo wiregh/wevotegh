@@ -1,11 +1,14 @@
-page-signup {
-     .app {
+page-forgotpass {
+    .app {
       background-color: map-get($colors, primary);
       
-      #reg-top{
-          margin-top: 60px;
+      .or{
+        color: #fff;
+        text-align: center;
       }
-
+      #header{
+          margin-top:0px;
+      }
       .logo {
         text-align: center;
       }
@@ -16,8 +19,8 @@ page-signup {
       .welcome{
         text-align:center;
         color: #fff;
-        font-size: 50px;
       }
+      
       
       img{
         margin-top: 20px;
@@ -25,7 +28,7 @@ page-signup {
       .inputs{
         background-color: map-get($colors, primary);
         color: #fff;
-        border-radius: 10px;
+       
       }
       .float-labels {
         background-color: map-get($colors, primary);
@@ -44,17 +47,20 @@ page-signup {
       color: map-get($colors , primary );
 
     }
+    .btns{float: left;}
     }
-    
       .browser {
         background-color: map-get($colors, primary);
         border-radius: 10px;
         overflow-y: hidden;
-  
-          .welcome{
-            font-size:45px;
-          }
-      
+    .or{
+        color: #fff;
+        text-align: center;
+      }
+         #header{
+          margin-top:100px;
+      }
+
         .input-has-focus .label-md[floating] {
         color: #fff;
       }
@@ -94,7 +100,6 @@ page-signup {
       color: map-get($colors , primary );
 
     }
-
-      }   
-      
+        
+      }
 }
