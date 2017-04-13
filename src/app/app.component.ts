@@ -7,7 +7,7 @@ import {MobileLoginPage} from "../pages/mobile-login/mobile-login";
 import {ViewMode} from "../providers/view-mode";
 import {LoginPage} from "../pages/login/login";
 import {SignupPage} from "../pages/signup/signup";
-
+import {ForgotpassPage} from "../pages/forgotpass/forgotpass";
 
 @Component({
   templateUrl: 'app.html'

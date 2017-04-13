@@ -11,18 +11,16 @@ import {LoginPage} from "../pages/login/login";
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-signup',
-  templateUrl: 'signup.html'
+  selector: 'page-forgotpass',
+  templateUrl: 'forgotpass.html'
 })
-export class SignupPage {
+export class ForgotpassPage {
 
-  signupForm: FormGroup;
+  forgotpassForm: FormGroup;
   constructor(public navCtrl: NavController, public navParams: NavParams,private authService: AuthService, private formBuilder: FormBuilder, public viewMode: ViewMode) {
      
-     this.signupForm = formBuilder.group({
-      userName: ["", [Validators.required]],
-      password: ["", [Validators.required]],
-      mobilePhone: ["", [Validators.required]],
+     this.forgotpassForm = formBuilder.group({
+    
       email: ["", [Validators.required]]
 
     });
@@ -33,3 +31,4 @@ export class SignupPage {
   }
 
 }
+

@@ -3,7 +3,9 @@
   import {AuthService} from "../../providers/authservice";
   import {ViewMode} from "../../providers/view-mode";
   import {SignupPage} from "../signup/signup";
+  import {ForgotpassPage} from "../forgotpass/forgotpass";
   import { NavController, NavParams } from 'ionic-angular';
+  import {ModalController} from "ionic-angular";
 /*
   Generated class for the LoginModal component.
 
@@ -22,7 +24,7 @@ auth: AuthService;
 loginForm: FormGroup;
 
 signupForm: FormGroup;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private authService: AuthService, private formBuilder: FormBuilder, public viewMode: ViewMode) {
+  constructor(public modalCtrl: ModalController,public navCtrl: NavController, public navParams: NavParams, private authService: AuthService, private formBuilder: FormBuilder, public viewMode: ViewMode) {
     
 //loginForm fields
     this.loginForm = formBuilder.group({
@@ -31,6 +33,8 @@ signupForm: FormGroup;
       rememberMe: [false]
     });
 
+     
+  
 
 
 
@@ -48,9 +52,23 @@ signupForm: FormGroup;
     // })
 
   }
+presentsignupModal() {
+    // let mo: ModalOptions;
+    // mo.showBackdrop=false;
+    // mo.enableBackdropDismiss= true;
+    let profileModal = this.modalCtrl.create(SignupPage);
 
-  signup(){
-      this.navCtrl.push(SignupPage);
-    }
+    profileModal.present();
+  }
+
+  presentforgotpassModal() {
+    // let mo: ModalOptions;
+    // mo.showBackdrop=false;
+    // mo.enableBackdropDismiss= true;
+    let profileModal = this.modalCtrl.create(ForgotpassPage);
+
+    profileModal.present();
+  }
+ 
 
 }

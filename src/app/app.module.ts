@@ -12,9 +12,10 @@ import {PublicPage} from "../pages/public/public";
 import {PublicheaderComponent} from "../components/publicheader/publicheader";
 import {LoginPage} from "../pages/login/login";
 import {SignupPage} from "../pages/signup/signup";
+import {ForgotpassPage} from "../pages/forgotpass/forgotpass";
 import {AuthService} from "../providers/authservice";
 import {FormBuilder} from "@angular/forms";
-import {MobileLoginPage} from "../pages/mobile-login/mobile-login"
+import {MobileLoginPage} from "../pages/mobile-login/mobile-login";
 import {ViewMode} from "../providers/view-mode";
 import {TestloginPage} from "../pages/testlogin/testlogin";
 
@@ -28,8 +29,8 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     HomePage,
     PublicheaderComponent,
     LoginPage,
-    SignupPage
-
+    SignupPage,
+    ForgotpassPage
 
   ],
   imports: [IonicModule.forRoot(MyApp)],
@@ -41,8 +42,8 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     HomePage,
     PublicheaderComponent,
     LoginPage,
-    SignupPage
-
+    SignupPage,
+    ForgotpassPage
 
   //
   ],
